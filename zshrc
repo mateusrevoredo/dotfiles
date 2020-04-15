@@ -6,9 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 declare -a files=(
-	                "$HOME/.dotfiles/zsh/path.zsh"
-	                "$HOME/.dotfiles/zsh/config.zsh"
-	                "$HOME/.dotfiles/zsh/completions.zsh"
+	                  "$HOME/.dotfiles/zsh/path.zsh"
+	                  "$HOME/.dotfiles/zsh/config.zsh"
+	                  "$HOME/.dotfiles/zsh/completions.zsh"
                     "$HOME/.dotfiles/zsh/plugins.zsh"
                     "$HOME/.dotfiles/zsh/aliases.zsh"
                     "$HOME/.dotfiles/zsh/functions.zsh"
