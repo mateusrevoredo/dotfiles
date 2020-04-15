@@ -5,17 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-declare -a files=(
-	                  "$HOME/.dotfiles/zsh/path.zsh"
-	                  "$HOME/.dotfiles/zsh/config.zsh"
-	                  "$HOME/.dotfiles/zsh/completions.zsh"
-                    "$HOME/.dotfiles/zsh/plugins.zsh"
-                    "$HOME/.dotfiles/zsh/aliases.zsh"
-                    "$HOME/.dotfiles/zsh/functions.zsh"
-                 )
+source ~/.dotfiles/zsh/env.zsh
+source ~/.dotfiles/zsh/path.zsh
+source ~/.dotfiles/zsh/config.zsh
+source ~/.dotfiles/zsh/zplug.zsh
+source ~/.dotfiles/zsh/completions.zsh
+source ~/.dotfiles/zsh/aliases.zsh
+source ~/.dotfiles/zsh/functions.zsh
+source ~/.dotfiles/zsh/nvm.zsh
 
-for file in "${files[@]}"
-do
-  source $file
-  [[ -f $file.local ]] && source $file.local   
-done
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
