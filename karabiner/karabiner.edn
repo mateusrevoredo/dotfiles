@@ -1,0 +1,69 @@
+{:profiles
+ {:goku {:default true
+         :sim     50
+         :delay   80
+         :alone   120
+         :held    70}}
+ :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
+             :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+             :open "open \"%s\""
+             }
+ :simlayers {
+             :caps-mode {:key :caps_lock}
+             :w-mode {:key :w}
+            }
+:main [
+        {:des "capskey (todo + trello)"
+         :rules [:caps-mode
+                 [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
+                 [:2 :!TO2] ; Screenshot -> Clipboard
+                 [:3 :!TO3] ; Screenshot -> Annotate
+                 [:4 :!TO9] ; Picture of screen -> Clipboard
+                 [:5 :!TO0] ; Picture of screen -> ~/Desktop
+                 [:w [:km "Open Papers / Courses Trello"]]
+                 [:e [:km "Open Learn Trello"]]
+                 [:u [:km "Open 2Do Buy"]]
+                 [:i [:km "Open 2Do Fix"]]
+                 [:o [:km "Open 2Do Tools"]]
+                 [:a [:km "Open 2Do Love"]]
+                 [:s [:km "Open 2Do Wiki"]]
+                 [:f [:km "Open Ideas Trello"]]
+                 [:g [:km "Open 🐱🐶 Trello"]]
+                 [:j [:km "Open 2Do Today"]]
+                 [:k [:km "Open 2Do GitHub"]]
+                 [:l [:km "Open 2Do Later"]]
+                 [:semicolon [:km "Open 2Do Starred"]]
+                 [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 [:c [:km "w: Goodreads (currently reading)"]]
+                 [:v [:km "w: Goodreads (next)"]]
+                 [:n [:km "Open 2Do Clean"]]
+                 [:m [:km "Open 2Do Work"]]
+                 [:period [:km "Search 2Do"]]]}
+								{:des "wkey (apps)"
+         :rules [:w-mode
+                 [:e [:km "open: Fantastical"]]
+                 [:r [:km "open: Trello"]]
+                 [:t [:km "open: Activity Monitor"]]
+                 [:y [:km "open: Safari Technology Preview"]]
+                 [:u [:km "open: Instruments"]]
+                 [:i [:km "open: Chrome Canary"]]
+                 [:o [:km "open: Keyboard Maestro"]]
+                 [:p [:km "open: Postgres"]]
+                 [:caps_lock [:km "open: Finder"]]
+                 [:a :!OSC1] ; Open Dash
+                 [:d [:km "open: Paw"]]
+                 [:f [:km "open: 2Do"]]
+                 [:g [:km "open: Notion"]]
+                 [:h [:km "open: Console"]]
+                 [:j [:km "open: Chrome"]]
+                 [:k [:km "open: Safari"]]
+                 [:l [:km "open: VS Code"]]
+                 [:semicolon [:km "open: Tower"]]
+                 [:c [:km "open: Spotify"]]
+                 [:v [:km "open: Postico"]]
+                 [:b [:km "open: BetterTouchTool"]]
+                 [:n [:km "open: Sublime Text"]]
+                 [:m [:km "open: Xcode"]]
+                 [:period [:km "open: Sublime Merge"]]
+                 [:spacebar :!CT7]]} ; Start Google search with selection                 
+]}

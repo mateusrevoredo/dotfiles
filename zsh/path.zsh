@@ -10,6 +10,6 @@ function _prepend_path() {
 # GNU File, Shell, and Text utilities
 [ -d /usr/local/opt/coreutils/libexec/gnubin ] && _prepend_path "/usr/local/opt/coreutils/libexec/gnubin"
 # PHPBrew Global Packages
-[ -d ~/.phpbrew/bin ] && _prepend_path "$HOME/.phpbrew/bin"
+# [ -d ~/.phpbrew/bin ] && _prepend_path "$HOME/.phpbrew/bin"
 
 export PATH
