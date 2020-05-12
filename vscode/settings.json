@@ -1,0 +1,9 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "window.newWindowDimensions": "inherit"
+}
