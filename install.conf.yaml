@@ -7,7 +7,12 @@
 - link:
     ~/.dotfiles: ''
     ~/.zshrc:
+      force: true
+      path: zshrc
     ~/.config/karabiner.edn: karabiner/karabiner.edn
+    ~/.hyper.js: 
+      force: true
+      path: hyper/hyper.js
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
