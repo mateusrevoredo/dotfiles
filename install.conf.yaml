@@ -19,3 +19,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [./vscode/install-extensions.sh, Installing vscode extensions]
