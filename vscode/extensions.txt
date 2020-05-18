@@ -7,5 +7,7 @@ k--kato.intellij-idea-keybindings
 kshetline.ligatures-limited
 ms-azuretools.vscode-docker
 ms-mssql.mssql
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
 msjsdiag.debugger-for-chrome
 vscode-icons-team.vscode-icons
