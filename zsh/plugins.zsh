@@ -1,10 +1,5 @@
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "zpm-zsh/dircolors-material", as:plugin
-zplug "junegunn/fzf-bin", \
-    from:gh-r, \
-    as:command, \
-    rename-to:fzf, \
-    use:"*darwin*amd64*"
 
 # zsh users
 zplug "zsh-users/zsh-completions",              defer:0
