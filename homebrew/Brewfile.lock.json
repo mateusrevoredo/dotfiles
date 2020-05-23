@@ -433,14 +433,110 @@
             }
           }
         }
+      },
+      "htop": {
+        "version": "2.2.0_1",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.catalina.bottle.tar.gz",
+              "sha256": "c06ff60960f64f5c8395f53d7419cbcce2a22ee87f0cb0138352c8a88111d21c"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.mojave.bottle.tar.gz",
+              "sha256": "77aa302765353b4085dcad52356d3264183e06310dda8d5bac64642299ea2902"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.high_sierra.bottle.tar.gz",
+              "sha256": "0ebfb655b91566ba31f8effc94d642a43305ff95bdc9b30b46fadc132e2ced0c"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/htop-2.2.0_1.sierra.bottle.tar.gz",
+              "sha256": "ed93b86f011de155c5d261b8c9cc9cb81fd0017667bf3ebe26ee090716bcd650"
+            }
+          }
+        }
+      },
+      "mercurial": {
+        "version": "5.4",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/mercurial-5.4.catalina.bottle.tar.gz",
+              "sha256": "9531d13dbfa541fafa87d364c82a3ce46436d5dac8f63ac5bf13577226e83985"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/mercurial-5.4.mojave.bottle.tar.gz",
+              "sha256": "e2a67d9eada384ceebfc13f0e32fece7cd4334e46f31a45d5f628a3ebcbada18"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/mercurial-5.4.high_sierra.bottle.tar.gz",
+              "sha256": "35da4d9f77fef15bfb8780a28377e51f339db57d7b01095f8b3b6974a0e6414f"
+            }
+          }
+        }
+      },
+      "mosh": {
+        "version": "1.3.2_11",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/mosh-1.3.2_11.catalina.bottle.tar.gz",
+              "sha256": "d864ba6a3869df2fd47894862f5f0b7d8e5f5f55daf58742243fa3ca8c69d474"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/mosh-1.3.2_11.mojave.bottle.tar.gz",
+              "sha256": "1f46edf8fbd83303ea4156530357207b6ad538a6abbbd5118f9c39e4898a4a19"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/mosh-1.3.2_11.high_sierra.bottle.tar.gz",
+              "sha256": "c8aa1ef313d62059bd8abee131880d5fa73f45e961388c055bc5f89970bcaf24"
+            }
+          }
+        }
+      },
+      "tldr": {
+        "version": "1.3.0_2",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/tldr-1.3.0_2.catalina.bottle.tar.gz",
+              "sha256": "bf2ea4c6b18e4fe9e7a49962273839446bb453f6b7d097abdb0149f5d1383cc0"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/tldr-1.3.0_2.mojave.bottle.tar.gz",
+              "sha256": "c5f99efa930b7f80647496c83fe118bd184feae7c5f256dc67d7594aceba7120"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/tldr-1.3.0_2.high_sierra.bottle.tar.gz",
+              "sha256": "00f5ce204fa62e51ed3be821abba9fdda36335b6cecf65231158c02b9713f357"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/tldr-1.3.0_2.sierra.bottle.tar.gz",
+              "sha256": "06f9609695fb6b14bbd78f3246bb176b341aecda6ce70515723cee8e8e4ced69"
+            },
+            "el_capitan": {
+              "url": "https://homebrew.bintray.com/bottles/tldr-1.3.0_2.el_capitan.bottle.tar.gz",
+              "sha256": "209c571e3472128665194e73451199087236758a0a7cfa6e88ffd7aa444abbac"
+            }
+          }
+        }
       }
     },
     "tap": {
       "homebrew/cask": {
-        "revision": "95e37fec0fb1c28244aed5ac1bd9b3fc892ca5b3"
+        "revision": "cf7921333e23f41dc1deb0bc3307bae9a1293dd0"
       },
       "homebrew/cask-drivers": {
-        "revision": "f0b81ee9cdb68b6bbba8bcadbcc09dae7eaee4db"
+        "revision": "27598eba4ada09e52c45a8354efd95f95ffab0a7"
       },
       "homebrew/cask-fonts": {
         "revision": "583ef3da7d333d8f8378e868ce2b4541adc62d12"
@@ -677,13 +773,46 @@
         "options": {
           "full_name": "whatsapp"
         }
+      },
+      "controlplane": {
+        "version": "1.6.7",
+        "options": {
+          "full_name": "controlplane"
+        }
+      },
+      "netspot": {
+        "version": "2.12.999",
+        "options": {
+          "full_name": "netspot"
+        }
+      },
+      "sequel-pro": {
+        "version": "1.1.2",
+        "options": {
+          "full_name": "sequel-pro"
+        }
+      },
+      "skype": {
+        "version": "8.60.0.76",
+        "options": {
+          "full_name": "skype"
+        }
+      },
+      "wireshark": {
+        "version": "3.2.4",
+        "options": {
+          "full_name": "wireshark"
+        }
+      },
+      "xmind": {
+        "version": "3.7.9.201912052356,8-update9",
+        "options": {
+          "full_name": "xmind"
+        }
       }
     },
     "mas": {
-      "2Do": {
-        "id": "477670270",
-        "version": "2.6.16"
-      },
+      "2Do": null,
       "Amphetamine": {
         "id": "937984704",
         "version": "5.0.2"
@@ -707,6 +836,22 @@
       "Sugarmate Glance": {
         "id": "1207352056",
         "version": "2.0.8"
+      },
+      "Affinity Photo": {
+        "id": "824183456",
+        "version": "1.8.3"
+      },
+      "PopClip": {
+        "id": "445189367",
+        "version": "2019.10"
+      },
+      "Telegram": {
+        "id": "747648890",
+        "version": "6.1.4"
+      },
+      "Numbers": {
+        "id": "409203825",
+        "version": "10.0"
       }
     }
   },
@@ -719,6 +864,14 @@
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "10.3",
         "macOS": "10.14.6"
+      },
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.17",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "1442077a2896dbf9cef5eac2b6bb2c9febdf7636",
+        "CLT": "11.5.0.0.1.1588476445",
+        "Xcode": "11.5",
+        "macOS": "10.15.4"
       }
     }
   }

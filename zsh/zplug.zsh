@@ -1,4 +1,8 @@
-source ~/.dotfiles/zplug/init.zsh
+# Check if zplug is installed
+if [[ ! -d ~/.zplug ]]; then
+  git clone https://github.com/zplug/zplug ~/.zplug
+  source ~/.zplug/init.zsh && zplug update --self
+fi
 
 zstyle ":zplug:tag" depth 1
 
