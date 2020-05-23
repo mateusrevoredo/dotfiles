@@ -5,5 +5,6 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
-    "window.newWindowDimensions": "inherit"
+    "window.newWindowDimensions": "inherit",
+    "editor.tabSize": 2
 }
