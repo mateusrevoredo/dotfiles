@@ -16,4 +16,5 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [./homebrew/brew.sh, Installing homebrew binaries and apps]
   - [./vscode/install-extensions.sh, Installing vscode extensions]
