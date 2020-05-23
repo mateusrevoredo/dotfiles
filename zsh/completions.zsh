@@ -11,11 +11,13 @@ fi
 zmodload -i zsh/complist
 
 # Automatically list choices on ambiguous completion
-setopt auto_list
+setopt AUTO_LIST
 # Automatically use menu completion
-setopt auto_menu
+setopt AUTO_MENU
 # Move cursor to end if word had one match
-setopt always_to_end
+setopt ALWAYS_TO_END
+#When the current word has a glob pattern, do not insert all the words resulting from the expansion
+setopt GLOB_COMPLETE
 
 # Select completions with arrow keys
 zstyle ':completion:*' menu select

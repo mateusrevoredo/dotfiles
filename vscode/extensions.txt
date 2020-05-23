@@ -1,11 +1,12 @@
 CoenraadS.bracket-pair-colorizer-2
-EditorConfig.EditorConfig
 Equinusocio.vsc-material-theme
 formulahendry.auto-close-tag
 HookyQR.beautify
 k--kato.intellij-idea-keybindings
 kshetline.ligatures-limited
+Lencerf.beancount
 ms-azuretools.vscode-docker
 ms-mssql.mssql
+ms-python.python
 msjsdiag.debugger-for-chrome
 vscode-icons-team.vscode-icons
