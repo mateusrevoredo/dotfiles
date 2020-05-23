@@ -1,14 +1,5 @@
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug "zdharma/zsh-diff-so-fancy"
-zplug "rupa/z", use:z.sh
 zplug "zpm-zsh/dircolors-material", as:plugin
-zplug "junegunn/fzf-bin", \
-    from:gh-r, \
-    as:command, \
-    rename-to:fzf, \
-    use:"*darwin*amd64*"
-zplug "junegunn/fzf", use:"shell/*.zsh", defer:2
-zplug "sharkdp/fd", as:command, from:gh-r, rename-to:fd, use:"*darwin*"
 
 # zsh users
 zplug "zsh-users/zsh-completions",              defer:0

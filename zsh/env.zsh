@@ -5,6 +5,9 @@ export LANG="en_US"
 export EDITOR="vim"
 export TERM="xterm-256color"
 
+# n, Node version manager (http://git.io/n-install-repo)
+export N_PREFIX="$HOME/n"
+
 # Keep a ton of history. You can reset these without editing .zshrc by
 # adding a file to ~/.zshrc.d.
 HISTSIZE=100000
