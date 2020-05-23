@@ -7,4 +7,6 @@ source ~/.dotfiles/zsh/powerline10k.zsh
 source ~/.dotfiles/zsh/completions.zsh
 source ~/.dotfiles/zsh/aliases.zsh
 source ~/.dotfiles/zsh/functions.zsh
-source ~/.dotfiles/zsh/nvm.zsh
+
+#Find better way to handle this
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

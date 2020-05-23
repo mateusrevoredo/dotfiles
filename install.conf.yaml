@@ -10,9 +10,6 @@
       force: true
       path: zshrc
     ~/.config/karabiner.edn: karabiner/karabiner.edn
-    ~/.hyper.js: 
-      force: true
-      path: hyper/hyper.js
     ~/Library/Application Support/Code/User/settings.json:
       force: true
       path: vscode/settings.json
