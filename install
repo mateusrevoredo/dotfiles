@@ -19,11 +19,7 @@ git submodule update --init --recursive --remote
 
 while IFS= read -r config; do
 	CONFIGS+=" ${config}"
-done < "${META_DIR}/${PROFILES_DIR}/$1"
-
-shift
-
-echo ${CONFIGS}
+done < "${META_DIR}/${PROFILES_DIR}/workstation"
 
 for config in ${CONFIGS} ${@}; do
 	echo -e "\nConfigure $config"

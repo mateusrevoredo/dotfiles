@@ -4,6 +4,8 @@ if [[ ! -d ~/.zplug ]]; then
   source ~/.zplug/init.zsh && zplug update --self
 fi
 
+source ~/.zplug/init.zsh
+
 zstyle ":zplug:tag" depth 1
 
 source ~/.dotfiles/zsh/plugins.zsh
