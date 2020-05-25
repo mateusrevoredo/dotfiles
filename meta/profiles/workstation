@@ -1,7 +1,5 @@
-homebrew
-git
-vscode
-karabiner
-node
-iterm
-zsh
+homebrew/binaries
+git/links
+vscode/links
+karabiner/links
+zsh/links

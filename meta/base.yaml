@@ -15,5 +15,4 @@
     ~/.dotfiles: ''
 
 - shell:
-  - [sudo -v, Ask for sudo password in advance]
   - ["git submodule update --init --recursive", "Installing submodules"]

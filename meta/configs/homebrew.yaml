@@ -1,5 +1,0 @@
-- shell:
-    - 
-      command: if ! [ -x "$(command -v brew)" ]; then CI=1 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; fi
-      description: Installing homebrew
-    - [./homebrew/brew.sh, Installing homebrew binaries and apps]
