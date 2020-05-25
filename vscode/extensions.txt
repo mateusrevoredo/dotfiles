@@ -1,4 +1,5 @@
 CoenraadS.bracket-pair-colorizer-2
+editorconfig.editorconfig
 Equinusocio.vsc-material-theme
 formulahendry.auto-close-tag
 HookyQR.beautify
