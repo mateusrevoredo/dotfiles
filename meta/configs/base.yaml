@@ -1,2 +1,0 @@
-- shell:
-    - [sudo -v, Ask for sudo password in advance]

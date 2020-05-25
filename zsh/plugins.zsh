@@ -8,3 +8,6 @@ zplug "zsh-users/zsh-syntax-highlighting",      defer:3, on:"zsh-users/zsh-autos
 zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-syntax-highlighting"
 
 zplug romkatv/powerlevel10k, as:theme
+
+Z_PATH=$(brew --prefix)/etc/profile.d
+zplug "$Z_PATH", from:local, use:z.sh

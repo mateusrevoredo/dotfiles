@@ -9,3 +9,6 @@ alias showfinder="defaults write com.apple.finder AppleShowAllFiles -bool true &
 alias hidefinder="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias updatedb="LC_ALL='C' sudo updatedb"
 alias of="open -a Finder ./"
+
+LOCAL_ALIASES="$LOCAL_CONFIG/zsh/aliases.zsh"
+[ -f $LOCAL_ALIASES ] && source $LOCAL_ALIASES

@@ -17,4 +17,5 @@ z() {
   cd "$(_z -l 2>&1 | fzf --nth 2.. --reverse --no-height --inline-info +s --tac --query "${*##-* }" | sed 's/^[0-9,.]* *//')"
 }
 
-[ -f ~/.dotfiles-local/zsh/functions.zsh ] && source ~/.dotfiles-local/zsh/functions.zsh
+LOCAL_FUNCTIONS="$LOCAL_CONFIG/zsh/functions.zsh"
+[ -f $LOCAL_FUNCTIONS ] && source $LOCAL_FUNCTIONS

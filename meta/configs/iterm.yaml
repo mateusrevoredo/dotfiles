@@ -1,0 +1,3 @@
+- shell:
+  - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/iterm", Set iTerm Configuration Path]
+  - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true, Configure iTerm to read preferences from custom folder]
