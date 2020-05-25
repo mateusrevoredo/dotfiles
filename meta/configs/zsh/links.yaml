@@ -1,4 +1,2 @@
 - link:
-    ~/.zshrc:
-      force: true
-      path: zshrc
+    ~/.zshrc: zshrc

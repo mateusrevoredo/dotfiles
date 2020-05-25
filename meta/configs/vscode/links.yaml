@@ -1,4 +1,2 @@
 - link:
-    ~/Library/Application Support/Code/User/settings.json:
-      force: true
-      path: vscode/settings.json
+    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json

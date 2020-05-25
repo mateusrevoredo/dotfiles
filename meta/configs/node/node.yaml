@@ -1,2 +1,2 @@
 - shell:
-    - ["if ! [ -x "$(command -v brew)" ]; then n install lts"; fi, "Installing Node.js LTS"]
+  - ["if ! [ -x "$(command -v brew)" ]; then n install lts"; fi, "Installing Node.js LTS"]
