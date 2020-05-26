@@ -7,5 +7,6 @@
     "editor.fontSize": 14,
     "window.newWindowDimensions": "inherit",
     "editor.tabSize": 2,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "window.openFoldersInNewWindow": "on"
 }
