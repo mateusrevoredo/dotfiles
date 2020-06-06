@@ -1,2 +1,0 @@
-- shell:
-  - [./homebrew/brew.sh -m, Installing homebrew mas apps]

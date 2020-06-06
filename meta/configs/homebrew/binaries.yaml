@@ -1,2 +1,0 @@
-- shell:
-  - [./homebrew/brew.sh -b, Installing homebrew binaries]

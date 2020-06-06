@@ -1,2 +1,0 @@
-- shell:
-  - [./homebrew/brew.sh -a, Installing homebrew cask apps]

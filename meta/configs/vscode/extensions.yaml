@@ -1,2 +1,0 @@
-- shell:
-  - [./vscode/install-extensions.sh, Installing vscode extensions]      
