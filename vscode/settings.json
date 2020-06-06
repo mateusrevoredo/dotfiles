@@ -9,5 +9,7 @@
     "editor.tabSize": 2,
     "explorer.confirmDragAndDrop": false,
     "window.openFoldersInNewWindow": "on",
-    "explorer.compactFolders": false
+    "explorer.compactFolders": false,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true
 }
