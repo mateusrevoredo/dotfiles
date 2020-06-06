@@ -8,5 +8,6 @@
     "window.newWindowDimensions": "inherit",
     "editor.tabSize": 2,
     "explorer.confirmDragAndDrop": false,
-    "window.openFoldersInNewWindow": "on"
+    "window.openFoldersInNewWindow": "on",
+    "explorer.compactFolders": false
 }

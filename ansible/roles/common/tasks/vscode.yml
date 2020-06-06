@@ -1,0 +1,9 @@
+---
+- name: Fetch installed extensions
+  shell: "{{ vscode_binary_name }} --list-extensions"
+  register: vscode_installed_extensions
+
+- name: Install extensions
+  shell: "{{ vscode_binary_name }} --install-extension {{ item }}"
+  when: vscode_installed_extensions is not search(item)
+  with_items: "{{ vscode_extensions }}"

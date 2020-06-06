@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.mateusrevoredo.alfred-gdrive</string>
+	<key>Program</key>
+	<string>/Applications/Alfred 3.app/Contents/MacOS/Alfred</string>
+	<key>QueueDirectories</key>
+	<array>
+		<string>/Volumes/GoogleDrive</string>
+	</array>
+</dict>
+</plist>

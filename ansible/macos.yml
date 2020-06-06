@@ -1,0 +1,14 @@
+---
+- hosts: all
+  connection: local
+
+  vars_files:
+    - macos.config.yml
+
+  roles:
+    - role: common
+    - role: geerlingguy.homebrew
+      tags: ['homebrew']
+    - role: geerlingguy.mas
+      tags: ['mas']
+    - role: macos

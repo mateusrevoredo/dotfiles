@@ -1,0 +1,15 @@
+---
+- name: Link main dotfiles repository
+  file:
+    src: "{{ dotfiles_source_directory }}"
+    dest: "{{ dotfiles_destination_directory }}"
+    state: link
+    force: true
+
+- name: Link application configurationn files
+  file:
+    src: "{{ dotfiles_destination_directory }}/{{ item.src }}"
+    dest: "{{ item.dest }}"
+    state: link
+    force: true
+  with_items: "{{ symlinks }}"

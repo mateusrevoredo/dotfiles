@@ -13,6 +13,8 @@ function _prepend_path() {
 [ -d /usr/local/opt/fzf/bin ] && _prepend_path "/usr/local/opt/fzf/bin"
 # GNU File, Shell, and Text utilities
 [ -d /usr/local/opt/coreutils/libexec/gnubin ] && _prepend_path "/usr/local/opt/coreutils/libexec/gnubin"
+#Pyenv Packages
+[ -d "$PYENV_ROOT/bin" ] && _prepend_path "$PYENV_ROOT/bin"
 
 LOCAL_PATH="$LOCAL_CONFIG/zsh/path.zsh"
 [ -f $LOCAL_PATH ] && source $LOCAL_PATH

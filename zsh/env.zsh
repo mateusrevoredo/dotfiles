@@ -7,6 +7,7 @@ export TERM="xterm-256color"
 
 # n, Node version manager (http://git.io/n-install-repo)
 export N_PREFIX="$HOME/n"
+export PYENV_ROOT="$HOME/.pyenv"
 
 # Keep a ton of history. You can reset these without editing .zshrc by
 # adding a file to ~/.zshrc.d.
@@ -26,6 +27,9 @@ ZSH_HIGHLIGHT_PATTERNS+=('rm \*' 'fg=white,bold,bg=red')
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --no-height --no-reverse"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git --color=always"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 LOCAL_ENV="$LOCAL_CONFIG/zsh/env.zsh"
 [ -f $LOCAL_ENV ] && source $LOCAL_ENV
