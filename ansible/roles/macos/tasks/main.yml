@@ -1,5 +1,3 @@
 ---
 - import_tasks: launchd.yml
   tags: ['launchd']
-- import_tasks: defaults.yml
-  tags: ['macosdefaults']

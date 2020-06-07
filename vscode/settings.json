@@ -11,5 +11,6 @@
     "window.openFoldersInNewWindow": "on",
     "explorer.compactFolders": false,
     "editor.formatOnType": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "editor.autoClosingBrackets": "never"
 }
