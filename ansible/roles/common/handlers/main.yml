@@ -1,0 +1,4 @@
+---
+- name: "Import the Node.js release team's OpenPGP keys to main keyring"
+  listen: Process installed asdf plugins
+  shell: "~/.asdf/plugins/nodejs/bin/import-release-team-keyring"

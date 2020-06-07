@@ -11,4 +11,5 @@
       tags: ['homebrew']
     - role: geerlingguy.mas
       tags: ['mas']
-    - role: macos
+    - role: markosamuli.asdf
+      tags: ['asdf']

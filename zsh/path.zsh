@@ -5,16 +5,16 @@ function _prepend_path() {
 	fi
 }
 
-#Node
-[ -d "$N_PREFIX/bin" ] && _prepend_path "$N_PREFIX/bin"
 # Homebrew
 [ -d /usr/local/bin ] && _prepend_path "/usr/local/bin"
 #FZF
 [ -d /usr/local/opt/fzf/bin ] && _prepend_path "/usr/local/opt/fzf/bin"
 # GNU File, Shell, and Text utilities
 [ -d /usr/local/opt/coreutils/libexec/gnubin ] && _prepend_path "/usr/local/opt/coreutils/libexec/gnubin"
-#Pyenv Packages
-[ -d "$PYENV_ROOT/bin" ] && _prepend_path "$PYENV_ROOT/bin"
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  [ -d "$(brew --prefix bison)/bin" ] && _prepend_path "$(brew --prefix bison)/bin"
+fi
 
 LOCAL_PATH="$LOCAL_CONFIG/zsh/path.zsh"
 [ -f $LOCAL_PATH ] && source $LOCAL_PATH

@@ -19,6 +19,7 @@ node_version: lts
 homebrew_installed_packages:
   - composer
   - coreutils
+  - gpg
   - diff-so-fancy
   - exa
   - htop
@@ -31,14 +32,10 @@ homebrew_installed_packages:
   - sqlite
   - mas
   - mosh
-  - n
   - ncdu
   - nmap
   - nmap
   - openssh
-  - php@7.4
-  - pyenv
-  - pyenv-virtualenv
   - tldr
   - sqlite
   - telnet
@@ -46,8 +43,24 @@ homebrew_installed_packages:
   - vim
   - wget
   - yqrashawn/goku/goku
-  - z
   - zsh
+  - automake
+  - bison
+  - ccache
+  - freetype
+  - gettext
+  - icu4c
+  - krb5
+  - libedit
+  - libiconv
+  - libjpeg
+  - libpng
+  - libxml2
+  - libzip
+  - pkg-config
+  - re2c
+  - zlib
+  - postgresql
 
 homebrew_taps:
   - homebrew/core
@@ -103,6 +116,7 @@ homebrew_cask_apps:
   - wireshark
   - whatsapp
   - xmind
+  - autoconf
 
 mas_installed_apps:
   - { id: 477670270, name: "2Do" }
@@ -136,3 +150,19 @@ vscode_extensions:
   - msjsdiag.debugger-for-chrome
   - vscode-icons-team.vscode-icons
   - vscoss.vscode-ansible
+
+asdf_version: "v0.7.8"
+asdf_init_shell: false
+asdf_plugins:
+  - name: "python"
+    versions:
+      - "3.6.10"
+    global: "3.6.10"
+  - name: "nodejs"
+    versions:
+      - "12.18.0"
+    global: "12.18.0"
+  - name: "php"
+    versions:
+      - "7.4.5"
+    global: "7.4.5"

@@ -1,3 +1,6 @@
 ---
   - name: geerlingguy.homebrew
   - name: geerlingguy.mas
+  - name: markosamuli.asdf
+    src: https://github.com/mateusrevoredo/ansible-asdf
+    version: origin/master

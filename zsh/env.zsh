@@ -5,10 +5,6 @@ export LANG="en_US"
 export EDITOR="vim"
 export TERM="xterm-256color"
 
-# n, Node version manager (http://git.io/n-install-repo)
-export N_PREFIX="$HOME/n"
-export PYENV_ROOT="$HOME/.pyenv"
-
 # Keep a ton of history. You can reset these without editing .zshrc by
 # adding a file to ~/.zshrc.d.
 HISTSIZE=100000
@@ -28,8 +24,9 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --no-height --no-reverse"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git --color=always"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export PKG_CONFIG_PATH="$(brew --prefix icu4c)/lib/pkgconfig:$(brew --prefix krb5)/lib/pkgconfig:$(brew --prefix libedit)/lib/pkgconfig:$(brew --prefix libxml2)/lib/pkgconfig:$(brew --prefix openssl)/lib/pkgconfig"
+fi
 
 LOCAL_ENV="$LOCAL_CONFIG/zsh/env.zsh"
 [ -f $LOCAL_ENV ] && source $LOCAL_ENV

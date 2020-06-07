@@ -1,9 +1,0 @@
----
-- name: Check if any version of node is installed
-  shell: "which node"
-  register: is_node_installed
-  ignore_errors: true
-
-- name: Install node
-  shell: "n install {{ node_version }}"
-  when: is_node_installed.rc != 0
