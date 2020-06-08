@@ -36,6 +36,7 @@
 	s = status -s
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
+	set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
 [pull]
 	default = current
 [push]
