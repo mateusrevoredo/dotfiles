@@ -1,15 +1,15 @@
 ---
-- name: Link main dotfiles repository
+- name: link main dotfiles repository
   file:
     src: "{{ dotfiles_source_directory }}"
     dest: "{{ dotfiles_destination_directory }}"
     state: link
     force: true
 
-- name: Link application configurationn files
+- name: link application configurationn files
   file:
     src: "{{ dotfiles_destination_directory }}/{{ item.src }}"
     dest: "{{ item.dest }}"
     state: link
     force: true
-  loop: "{{ shared_symlinks + symlinks|flatten(levels=1) }}"
+  loop: "{{ symlinks + shared_symlinks|flatten(levels=1) }}"

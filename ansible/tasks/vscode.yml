@@ -1,9 +1,9 @@
 ---
-- name: Fetch installed extensions
+- name: fetch installed extensions
   shell: "{{ vscode_binary_name }} --list-extensions"
   register: vscode_installed_extensions
 
-- name: Install extensions
+- name: install extensions
   shell: "{{ vscode_binary_name }} --install-extension {{ item }}"
   when: vscode_installed_extensions is not search(item)
   loop: "{{ shared_vscode_extensions + vscode_extensions|flatten(levels=1) }}"

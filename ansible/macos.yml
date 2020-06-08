@@ -1,16 +1,16 @@
 ---
-- hosts: all
-  connection: local
+- hosts: 127.0.0.1
 
   vars_files:
     - common.config.yml
 
   roles:
-    - role: common
     - role: geerlingguy.homebrew
       tags: ['homebrew']
     - role: geerlingguy.mas
       tags: ['mas']
+    - role: common
+    - role: macos
     - role: markosamuli.asdf
       tags: ['asdf']
 
@@ -18,6 +18,9 @@
     dotfiles_source_directory: "~/Code/mateusrevoredo/dotfiles"
 
     symlinks:
+      - { src: "karabiner/karabiner.edn", dest: "~/.config/karabiner.edn" }
+      - { src: "iterm/com.googlecode.iterm2.plist", dest: "~/Library/Preferences/com.googlecode.iterm2.plist" }
+      - { src: "launchd/com.mateusrevoredo.alfred-gdrive.plist", dest: "~/Library/LaunchAgents/com.mateusrevoredo.alfred-gdrive.plist" }
       - { src: "vscode/settings.json", dest: "~/Library/Application Support/Code/User/settings.json" }
 
     launch_agents_load:
@@ -27,7 +30,6 @@
       - composer
       - coreutils
       - gpg
-      - diff-so-fancy
       - exa
       - htop
       - fd
@@ -43,7 +45,6 @@
       - nmap
       - nmap
       - openssh
-      - tldr
       - sqlite
       - telnet
       - unzip

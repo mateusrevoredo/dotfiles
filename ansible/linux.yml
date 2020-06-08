@@ -1,0 +1,79 @@
+---
+- hosts: devbox
+
+  vars_files:
+    - common.config.yml
+
+  tasks:
+    - import_tasks: tasks/linux/code-server.yml
+      tags: ['code-server']
+    - import_tasks: tasks/vscode.yml
+      tags: ['vscode']
+    - import_tasks: tasks/links.yml
+      tags: ['links']
+    - import_tasks: tasks/linux/base.yml
+      tags: ['base']
+    - import_tasks: tasks/asdf.yml
+      tags: ['asdf']
+
+  handlers:
+    - import_tasks: handlers/asdf.yml
+
+  vars:
+    dotfiles_source_directory: "~/code/mateusrevoredo/dotfiles"
+
+    symlinks:
+      - { src: "vscode/settings.json", dest: "~/.local/share/code-server/User/settings.json" }
+
+    code_server_auth: none
+
+    packages:
+      - autoconf
+      - bison
+      - build-essential
+      - coreutils
+      - curl
+      - exa
+      - gettext
+      - gnupg
+      - libbz2-dev
+      - libcurl4-openssl-dev
+      - libedit-dev
+      - libffi-dev
+      - libicu-dev
+      - libjpeg-dev
+      - liblzma-dev
+      - default-libmysqlclient-dev
+      - libncurses5-dev
+      - libonig-dev
+      - libpng-dev
+      - libpq-dev
+      - libreadline-dev
+      - libsqlite3-dev
+      - libssl-dev
+      - libxml2-dev
+      - libxmlsec1-dev
+      - libzip-dev
+      - llvm
+      - openssl
+      - pkg-config
+      - re2c
+      - tk-dev
+      - wget
+      - xz-utils
+      - zlib1g-dev
+      - htop
+      - fd-find
+      - findutils
+      - jq
+      - sqlite3
+      - mosh
+      - ncdu
+      - nmap
+      - unzip
+      - vim
+      - wget
+      - zsh
+
+    vscode_binary_name: code-server
+    vscode_extensions: []

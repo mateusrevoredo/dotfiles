@@ -5,9 +5,7 @@ shared_symlinks:
   - { src: "zshrc", dest: "~/.zshrc" }
   - { src: "git/gitconfig", dest: "~/.gitconfig" }
   - { src: "editorconfig", dest: "~/.editorconfig" }
-  - { src: "karabiner/karabiner.edn", dest: "~/.config/karabiner.edn" }
-  - { src: "iterm/com.googlecode.iterm2.plist", dest: "~/Library/Preferences/com.googlecode.iterm2.plist" }
-  - { src: "launchd/com.mateusrevoredo.alfred-gdrive.plist", dest: "~/Library/LaunchAgents/com.mateusrevoredo.alfred-gdrive.plist" }
+  - { src: "asdf/default-npm-packages", dest: "~/.default-npm-packages" }
 
 shared_vscode_extensions:
   - CoenraadS.bracket-pair-colorizer-2
@@ -24,6 +22,8 @@ shared_vscode_extensions:
   - vscode-icons-team.vscode-icons
   - vscoss.vscode-ansible
 
+asdf_home: "{{ ansible_env.HOME }}"
+asdf_dir: "{{ asdf_home }}/.asdf"
 asdf_version: "v0.7.8"
 asdf_init_shell: false
 asdf_plugins:

@@ -1,0 +1,30 @@
+---
+- name: upgrade to Debian Sid
+  copy:
+    src: "sources.list"
+    dest: /etc/apt/sources.list
+  become: yes
+
+- name: run apt-get update
+  apt: update_cache=yes
+  become: yes
+
+- name: run apt-get dist upgrade
+  apt: upgrade=dist
+  become: yes
+
+- name: install dependencies
+  apt:
+    pkg: "{{ item }}"
+    state: present
+  loop: "{{ packages|flatten(levels=1) }}"
+  become: yes
+
+- name: set zsh as default shell
+  user:
+    name: "{{ ansible_ssh_user }}"
+    shell: /usr/bin/zsh
+  become: true
+
+- name: reset ssh connection to use new installed shell
+  meta: reset_connection

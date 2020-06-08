@@ -1,0 +1,7 @@
+---
+- import_role:
+    name: geerlingguy.homebrew
+  tags: ['homebrew']
+- import_role:
+    name: geerlingguy.mas
+  tags: ['mas']

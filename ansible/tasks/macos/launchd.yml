@@ -1,9 +1,9 @@
 ---
-- name: Check which LaunchAgents are loaded
+- name: check which LaunchAgents are loaded
   shell: "launchctl list"
   register: loaded_agents
 
-- name: Load custom LaunchAgents if not loaded
+- name: load custom LaunchAgents if not loaded
   shell: "launchctl load ~/Library/LaunchAgents/{{ item }}.plist"
   when: loaded_agents is not search(item)
   loop: "{{ launch_agents_load|flatten(levels=1) }}"
