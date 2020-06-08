@@ -12,4 +12,4 @@
     dest: "{{ item.dest }}"
     state: link
     force: true
-  with_items: "{{ symlinks }}"
+  loop: "{{ shared_symlinks + symlinks|flatten(levels=1) }}"

@@ -6,4 +6,4 @@
 - name: Load custom LaunchAgents if not loaded
   shell: "launchctl load ~/Library/LaunchAgents/{{ item }}.plist"
   when: loaded_agents is not search(item)
-  with_items: "{{ launch_agents_load }}"
+  loop: "{{ launch_agents_load|flatten(levels=1) }}"

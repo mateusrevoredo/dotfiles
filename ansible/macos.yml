@@ -3,7 +3,7 @@
   connection: local
 
   vars_files:
-    - macos.config.yml
+    - common.config.yml
 
   roles:
     - role: common
@@ -13,3 +13,134 @@
       tags: ['mas']
     - role: markosamuli.asdf
       tags: ['asdf']
+
+  vars:
+    dotfiles_source_directory: "~/Code/mateusrevoredo/dotfiles"
+
+    symlinks:
+      - { src: "vscode/settings.json", dest: "~/Library/Application Support/Code/User/settings.json" }
+
+    launch_agents_load:
+      - com.mateusrevoredo.alfred-gdrive
+
+    homebrew_installed_packages:
+      - composer
+      - coreutils
+      - gpg
+      - diff-so-fancy
+      - exa
+      - htop
+      - fd
+      - findutils
+      - jq
+      - fzf
+      - git
+      - jq
+      - sqlite
+      - mas
+      - mosh
+      - ncdu
+      - nmap
+      - nmap
+      - openssh
+      - tldr
+      - sqlite
+      - telnet
+      - unzip
+      - vim
+      - wget
+      - yqrashawn/goku/goku
+      - zsh
+      - automake
+      - bison
+      - ccache
+      - freetype
+      - gettext
+      - icu4c
+      - krb5
+      - libedit
+      - libiconv
+      - libjpeg
+      - libpng
+      - libxml2
+      - libzip
+      - pkg-config
+      - re2c
+      - zlib
+      - postgresql
+
+    homebrew_taps:
+      - homebrew/core
+      - homebrew/cask
+      - yqrashawn/goku
+      - homebrew/cask-fonts
+      - homebrew/cask-drivers
+
+    homebrew_cask_appdir: /Applications
+    homebrew_cask_apps:
+      - 1password
+      - 1password-cli
+      - aerial
+      - alfred
+      - appcleaner
+      - balenaetcher
+      - bartender
+      - bettertouchtool
+      - coconutbattery
+      - controlplane
+      - daisydisk
+      - docker
+      - firefox
+      - font-fira-code
+      - font-firacode-nerd-font
+      - google-chrome
+      - hazel
+      - insomnia
+      - istat-menus
+      - iterm2
+      - kap
+      - karabiner-elements
+      - keyboard-maestro
+      - keyboardcleantool
+      - logitech-options
+      - netspot
+      - notion
+      - paw
+      - phpstorm
+      - postman
+      - slack
+      - sequel-pro
+      - skype
+      - spotify
+      - sublime-text
+      - telegram
+      - the-unarchiver
+      - timing
+      - vagrant
+      - virtualbox
+      - visual-studio-code
+      - vlc
+      - wireshark
+      - whatsapp
+      - xmind
+      - autoconf
+
+    mas_installed_apps:
+      - { id: 477670270, name: "2Do" }
+      - { id: 937984704, name: "Amphetamine" }
+      - { id: 918207447, name: "Annotate" }
+      - { id: 824183456, name: "Affinity Photo" }
+      - { id: 409183694, name: "Keynote" }
+      - { id: 441258766, name: "Magnet" }
+      - { id: 409201541, name: "Pages" }
+      - { id: 445189367, name: "PopClip" }
+      - { id: 1207352056, name: "Sugarmate Glance" }
+      - { id: 747648890, name: "Telegram" }
+      - { id: 409203825, name: "Numbers" }
+      - { id: 409201541, name: "Pages" }
+      - { id: 409183694, name: "Keynote" }
+
+    vscode_binary_name: code
+    vscode_extensions:
+      - ms-vscode-remote.remote-containers
+      - ms-vscode-remote.remote-ssh

@@ -6,4 +6,4 @@
 - name: Install extensions
   shell: "{{ vscode_binary_name }} --install-extension {{ item }}"
   when: vscode_installed_extensions is not search(item)
-  with_items: "{{ vscode_extensions }}"
+  loop: "{{ shared_vscode_extensions + vscode_extensions|flatten(levels=1) }}"
