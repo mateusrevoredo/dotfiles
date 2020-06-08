@@ -3,16 +3,16 @@
 	path = ~/.gitconfig.local
 [core]
 	excludesfile = ~/.gitignore
-	editor = code
+	editor = vim 
 	pager = diff-so-fancy | less --tabs=4 -RFX
-[merge]
-    tool = vscode
-[mergetool "vscode"]
-    cmd = code --wait $MERGED
-[diff]
-    tool = vscode
-[difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+#[merge]
+#    tool = vscode
+#[mergetool "vscode"]
+#    cmd = code --wait $MERGED
+#[diff]
+#    tool = vscode
+#[difftool "vscode"]
+#    cmd = code --wait --diff $LOCAL $REMOTE
 [color]
 	ui = true
 [color "diff-highlight"]
