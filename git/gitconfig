@@ -42,3 +42,6 @@
 	rebase = false
 [push]
 	default = current
+[user]
+	name = Mateus Revoredo
+	email = 1175432+mateusrevoredo@users.noreply.github.com
