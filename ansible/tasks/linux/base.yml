@@ -26,5 +26,10 @@
     shell: /usr/bin/zsh
   become: true
 
+- name: set system timezone
+  timezone:
+    name: "{{ system_timezone }}"
+  become: true
+
 - name: reset ssh connection to use new installed shell
   meta: reset_connection

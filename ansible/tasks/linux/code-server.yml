@@ -1,4 +1,3 @@
 ---
 - import_role:
     name: pallxk.code_server
-  tags: ['code-server']

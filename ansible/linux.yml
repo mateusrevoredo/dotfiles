@@ -27,6 +27,8 @@
 
     code_server_auth: none
 
+    system_timezone: "Europe/Berlin"
+
     packages:
       - autoconf
       - bison

@@ -6,6 +6,7 @@ shared_symlinks:
   - { src: "git/gitconfig", dest: "~/.gitconfig" }
   - { src: "editorconfig", dest: "~/.editorconfig" }
   - { src: "asdf/default-npm-packages", dest: "~/.default-npm-packages" }
+  - { src: "asdf/default-python-packages", dest: "~/.default-python-packages" }
 
 shared_vscode_extensions:
   - CoenraadS.bracket-pair-colorizer-2

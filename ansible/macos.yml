@@ -4,15 +4,20 @@
   vars_files:
     - common.config.yml
 
-  roles:
-    - role: geerlingguy.homebrew
+  tasks:
+    - import_tasks: tasks/macos/homebrew.yml
       tags: ['homebrew']
-    - role: geerlingguy.mas
-      tags: ['mas']
-    - role: common
-    - role: macos
-    - role: markosamuli.asdf
+    - import_tasks: tasks/macos/services.yml
+      tags: ['services']
+    - import_tasks: tasks/vscode.yml
+      tags: ['vscode']
+    - import_tasks: tasks/links.yml
+      tags: ['links']
+    - import_tasks: tasks/asdf.yml
       tags: ['asdf']
+
+  handlers:
+    - import_tasks: handlers/asdf.yml
 
   vars:
     dotfiles_source_directory: "~/Code/mateusrevoredo/dotfiles"
@@ -53,6 +58,7 @@
       - yqrashawn/goku/goku
       - zsh
       - automake
+      - autoconf
       - bison
       - ccache
       - freetype
@@ -104,8 +110,8 @@
       - keyboard-maestro
       - keyboardcleantool
       - logitech-options
-      - netspot
       - notion
+      - netspot
       - paw
       - phpstorm
       - postman
@@ -124,7 +130,6 @@
       - wireshark
       - whatsapp
       - xmind
-      - autoconf
 
     mas_installed_apps:
       - { id: 477670270, name: "2Do" }
