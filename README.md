@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=600px height=200px src="https://i.imgur.com/Xq4YDmU.jpg" alt="Project logo"></a>
+ <img width=600px src="https://i.imgur.com/Xq4YDmU.jpg" alt="Project logo"></a>
 </p>
 
 <h2 align="center">My Personal Automated Machine Configurator</h2>
@@ -32,7 +32,7 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About/Motivation <a name = "motivation"></a>
-People that have worked with me in the past know that one of the things that I **dislike the most** is doing **repetitive tasks**. Copying and pasting snippets of code, running the same command multiple times, or clicking on the same UI elements repetitively. Yet I sill found myself almost daily wasting a significant amount of time trying to keep all of my devices configured in sync.
+People that have worked with me in the past know that one of the things that I **dislike the most** is doing **repetitive tasks**. Copying and pasting snippets of code, running the same command multiple times, or clicking on the same UI elements repetitively. Yet I still found myself almost daily wasting a significant amount of time trying to keep all of my devices configured in sync.
 
 I currently have my work MacBook, my personal MacBook, and a personal Debian LXC container hosted on [Proxmox](https://proxmox.com/en/) running on  a [web version of VS Code](https://github.com/cdr/code-server) that I connect on my iPad Pro using [Blink](https://blink.sh/) to do some lightweight coding tasks and administer my [homelab](https://github.com/mateusrevoredo/homelab) servers on the go.
 
