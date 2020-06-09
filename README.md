@@ -42,7 +42,7 @@ This project turns the repetitive job of maintaining multiple machines configure
 
 ## ⚠️ Disclaimer <a name = "disclaimer"></a>
 
-This project was written to fulfill my personal needs. Although It's generic enough to be executed in any computer according to [@anishathalye](https://github.com/anishathalye), [dotfiles are not meant to be forked](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles), and I tend to agree with this statement.
+The scripts and configuration files were written to fulfill my personal needs. Although It's generic enough to be executed in any computer, according to [@anishathalye](https://github.com/anishathalye), [dotfiles are not meant to be forked](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles), and I tend to agree with this statement.
 
 I still decided to make it open source because it can be a valuable source of inspiration or even serve as a starting point to someone that has decided to do something similar.
 
