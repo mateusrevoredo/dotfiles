@@ -53,7 +53,7 @@
       - sqlite
       - telnet
       - unzip
-      - vim
+      - neovim
       - wget
       - yqrashawn/goku/goku
       - zsh
@@ -75,6 +75,7 @@
       - re2c
       - zlib
       - postgresql
+      - tmux
 
     homebrew_taps:
       - homebrew/core
