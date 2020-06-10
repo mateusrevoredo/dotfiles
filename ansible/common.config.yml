@@ -22,6 +22,7 @@ shared_vscode_extensions:
   - msjsdiag.debugger-for-chrome
   - vscode-icons-team.vscode-icons
   - vscoss.vscode-ansible
+  - streetsidesoftware.code-spell-checker
 
 asdf_home: "{{ ansible_env.HOME }}"
 asdf_dir: "{{ asdf_home }}/.asdf"

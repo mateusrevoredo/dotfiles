@@ -10,7 +10,6 @@ alias hidefinder="defaults write com.apple.finder AppleShowAllFiles -bool false 
 alias updatedb="LC_ALL='C' sudo updatedb"
 alias of="open -a Finder ./"
 alias vim="nvim"
-alias v="vim"
 
 LOCAL_ALIASES="$LOCAL_CONFIG/zsh/aliases.zsh"
 [ -f $LOCAL_ALIASES ] && source $LOCAL_ALIASES
