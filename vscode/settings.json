@@ -12,5 +12,7 @@
     "explorer.compactFolders": false,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "editor.autoClosingBrackets": "never"
+    "editor.autoClosingBrackets": "never",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "terminal.integrated.fontSize": 14
 }
