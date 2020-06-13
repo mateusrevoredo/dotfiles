@@ -9,4 +9,5 @@ source ~/.dotfiles/zsh/zplug.zsh
 source ~/.dotfiles/zsh/powerline10k.zsh
 source ~/.dotfiles/zsh/aliases.zsh
 source ~/.dotfiles/zsh/functions.zsh
+source ~/.dotfiles/zsh/key-bindings.zsh
 
