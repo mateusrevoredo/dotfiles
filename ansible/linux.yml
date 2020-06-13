@@ -36,6 +36,7 @@
       - coreutils
       - curl
       - exa
+      - fzf
       - gettext
       - gnupg
       - libbz2-dev
