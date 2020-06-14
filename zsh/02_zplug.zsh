@@ -41,6 +41,15 @@ zplug "chrissicool/zsh-256color"
 zplug "RobSis/zsh-completion-generator"
 zplug "DarrinTisdale/zsh-aliases-exa"
 
+# binaries
+zplug "jesseduffield/lazygit", \
+    from:gh-r, \
+    as:command, \
+    rename-to:lazygit, \
+    use:"*$(uname -s)*x86_64*"
+
+zplug "so-fancy/diff-so-fancy",                 as:command
+
 # colors & Theme
 zplug "romkatv/powerlevel10k",                  as:theme
 zplug "zpm-zsh/material-colors",                as:plugin, use:material-colors.plugin.zsh
