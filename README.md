@@ -92,7 +92,32 @@ These should go to their respective files: `linux.yml` or `macos.yml`
 
 ### Command Line Apps
 
-...TBD
+- [coreutils](https://www.gnu.org/software/coreutils/) - GNU File, Shell, and Text utilities for macOS
+- [exa](https://github.com/ogham/exa) - Replacement for ls written in rust.
+- [htop](https://github.com/hishamhm/htop) - Interactive text-mode process viewer for Unix systems.
+- [fd](https://github.com/sharkdp/fd) - Simple, fast and user-friendly alternative to 'find'.
+- [findutils](https://www.gnu.org/software/findutils/) - Collection of GNU find, xargs, and locate'find'.
+- [jq](https://github.com/stedolan/jq) - JSON processor
+- [fzf](https://github.com/junegunn/fzf) - Command-line fuzzy finder.
+- [git](https://github.com/git/git) - Version control.
+- [sqlite](https://github.com/sqlite/sqlite) - Relational database management system written in C
+- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface
+- [mosh](https://github.com/mobile-shell/mosh) - The mobile shell
+- [ncdu](https://dev.yorhel.nl/ncdu) - Disk usage analyzer with an ncurses interface
+- [nmap](https://github.com/nmap/nmap) - The Network Mapper
+- [openssh](https://www.openssh.com/) - OpenBSD freely-licensed SSH connectivity tools
+- telnet - User interface to the TELNET protocol
+- [unzip](http://infozip.sourceforge.net/UnZip.html) - Extraction utility for .zip compressed archives
+- [neovim](https://neovim.io/) - Ambitious Vim-fork focused on extensibility and agility
+- [wget](https://www.gnu.org/software/wget/) - Internet file retriever
+- [goku](https://github.com/yqrashawn/GokuRakuJoudo) - Manage your Karabiner configuration with ease.
+- [zsh](https://www.zsh.org/) - UNIX shell (command interpreter)
+- [tmux](https://github.com/tmux/tmux) - Terminal multiplexer
+- [curl](https://curl.haxx.se/) - Get a file from an HTTP, HTTPS or FTP server
+- [z](https://github.com/rupa/z) - Jump quickly to directories that you have visited recently
+- [lazygit](https://github.com/jesseduffield/lazygit) - Simple terminal UI for git commands
+- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) - Good-looking git diffs.
+- [tldr](https://github.com/tldr-pages/tldr) - Simplified and community-driven man pages.
 
 ## 💥 TODO <a name = "todo"></a>
 

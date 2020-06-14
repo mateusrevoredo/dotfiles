@@ -32,7 +32,6 @@
       - com.mateusrevoredo.alfred-gdrive
 
     homebrew_installed_packages:
-      - composer
       - coreutils
       - exa
       - htop
@@ -48,12 +47,11 @@
       - ncdu
       - nmap
       - openssh
-      - sqlite
       - telnet
       - unzip
       - neovim
       - wget
-      - yqrashawn/goku/goku
+      - goku
       - zsh
       - tmux
       - curl
@@ -89,6 +87,7 @@
       - homebrew/core
       - homebrew/cask
       - yqrashawn/goku
+      - dteoh/sqa
       - homebrew/cask-fonts
       - homebrew/cask-drivers
 
@@ -121,6 +120,7 @@
       - logitech-options
       - notion
       - netspot
+      - slowquitapps
       - paw
       - phpstorm
       - postman
