@@ -17,6 +17,7 @@ zplug "modules/completion",                     from:prezto
 zplug "modules/history",                        from:prezto
 zplug "modules/directory",                      from:prezto
 zplug "modules/terminal",                       from:prezto
+zplug "modules/gnu-utility",                    from:prezto, if:"[[ $OSTYPE == *darwin* ]]"
 
 # oh my zsh plugins
 zplug "plugins/fzf",                            from:oh-my-zsh
