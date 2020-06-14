@@ -133,6 +133,5 @@ A lot of people have their own personalized ways of doing what this project does
 
 - [@geerlingguy](https://github.com/geerlingguy) - For the massive amount of Ansible roles written. Some that I use in this repo, some that I used to understand how things work in Ansible.
 - [@mathiasbynens](https://github.com/mathiasbynens) - For the base macOS preferences [script file](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) that I mostly copied and added a few other personal preferences.
-- [@sapegin](https://github.com/sapegin) - For a lot of ideas on the initial structure of my zsh config based on [his dotfiles](https://github.com/sapegin/dotfiles)
 - [@nikitavoloboev](https://github.com/nikitavoloboev) - For the huge amount of content shared with the community, that ended up being useful for this repo. Including [his dotfiles](https://github.com/nikitavoloboev/dotfiles) and [his macOS configuration repo](https://github.com/nikitavoloboev/my-mac-os)
 - [@jglovier](https://github.com/jglovier) - For the free logo that I used as a base for mine.
