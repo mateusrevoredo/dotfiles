@@ -37,6 +37,22 @@
       - curl
       - exa
       - fzf
+      - wget
+      - htop
+      - fd-find
+      - findutils
+      - jq
+      - sqlite3
+      - mosh
+      - ncdu
+      - nmap
+      - unzip
+      - wget
+      - zsh
+      - neovim
+      - tmux
+
+    asdf_dependencies:
       - gettext
       - gnupg
       - libbz2-dev
@@ -62,22 +78,8 @@
       - pkg-config
       - re2c
       - tk-dev
-      - wget
       - xz-utils
       - zlib1g-dev
-      - htop
-      - fd-find
-      - findutils
-      - jq
-      - sqlite3
-      - mosh
-      - ncdu
-      - nmap
-      - unzip
-      - wget
-      - zsh
-      - neovim
-      - tmux
 
     vscode_binary_name: code-server
     vscode_extensions: []
