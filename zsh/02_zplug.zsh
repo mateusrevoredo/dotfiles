@@ -17,6 +17,7 @@ zplug "modules/completion",                     from:prezto
 zplug "modules/history",                        from:prezto
 zplug "modules/directory",                      from:prezto
 zplug "modules/terminal",                       from:prezto
+zplug "modules/gnu-utility",                    from:prezto, if:"[[ $OSTYPE == *darwin* ]]"
 
 # oh my zsh plugins
 zplug "plugins/fzf",                            from:oh-my-zsh
@@ -40,6 +41,15 @@ zplug "djui/alias-tips"
 zplug "chrissicool/zsh-256color"
 zplug "RobSis/zsh-completion-generator"
 zplug "DarrinTisdale/zsh-aliases-exa"
+
+# binaries
+zplug "jesseduffield/lazygit", \
+    from:gh-r, \
+    as:command, \
+    rename-to:lazygit, \
+    use:"*$(uname -s)*x86_64*"
+
+zplug "so-fancy/diff-so-fancy",                 as:command
 
 # colors & Theme
 zplug "romkatv/powerlevel10k",                  as:theme
