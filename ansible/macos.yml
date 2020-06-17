@@ -55,6 +55,8 @@
       - zsh
       - tmux
       - curl
+      - neofetch
+      - bat
 
     asdf_dependencies:
       - automake
