@@ -23,6 +23,8 @@ shared_vscode_extensions:
   - vscode-icons-team.vscode-icons
   - vscoss.vscode-ansible
   - streetsidesoftware.code-spell-checker
+  - dongfg.vscode-beancount-formatter
+  - oderwat.indent-rainbow
 
 asdf_home: "{{ ansible_env.HOME }}"
 asdf_dir: "{{ asdf_home }}/.asdf"
