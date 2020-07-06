@@ -141,6 +141,7 @@
       - wireshark
       - whatsapp
       - xmind
+      - iina
 
     mas_installed_apps:
       - { id: 477670270, name: "2Do" }
