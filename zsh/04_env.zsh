@@ -1,5 +1,3 @@
-LOCAL_CONFIG_DIR=~/.dotfiles-local
-
 # locale
 export LC_ALL=en_US.UTF-8
 export LANG="en_US"

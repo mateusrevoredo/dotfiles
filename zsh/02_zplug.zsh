@@ -13,16 +13,20 @@ zstyle ":zplug:tag" depth 1
 zplug "zplug/zplug",                            hook-build:'zplug --self-manage'
 
 # prezto modules
-zplug "modules/completion",                     from:prezto
 zplug "modules/history",                        from:prezto
 zplug "modules/directory",                      from:prezto
 zplug "modules/terminal",                       from:prezto
 zplug "modules/gnu-utility",                    from:prezto, if:"[[ $OSTYPE == *darwin* ]]"
 
+# oh my zsh lib
+zplug "lib/completion",                         from:oh-my-zsh
+zplug "lib/clipboard",                          from:oh-my-zsh
+
 # oh my zsh plugins
 zplug "plugins/fzf",                            from:oh-my-zsh
 zplug "plugins/asdf",                           from:oh-my-zsh
 zplug "plugins/sudo",                           from:oh-my-zsh
+zplug "plugins/fasd",                           from:oh-my-zsh
 zplug "plugins/colored-man-pages",              from:oh-my-zsh
 zplug "plugins/docker",                         from:oh-my-zsh
 zplug "plugins/docker-compose",                 from:oh-my-zsh
@@ -36,11 +40,11 @@ zplug "zsh-users/zsh-syntax-highlighting",      defer:3, on:"zsh-users/zsh-autos
 zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-syntax-highlighting"
 
 # general plugins
-zplug "rupa/z",                                 use:z.sh
 zplug "djui/alias-tips"
 zplug "chrissicool/zsh-256color"
 zplug "RobSis/zsh-completion-generator"
 zplug "DarrinTisdale/zsh-aliases-exa"
+zplug "wookayin/fzf-fasd"
 
 # binaries
 zplug "jesseduffield/lazygit", \
@@ -49,6 +53,12 @@ zplug "jesseduffield/lazygit", \
     rename-to:lazygit, \
     use:"*$(uname -s)*x86_64*"
 
+zplug "x-motemen/ghq", \
+    from:gh-r, \
+    as:command, \
+    rename-to:ghq
+
+zplug "clvv/fasd",                              as:command
 zplug "so-fancy/diff-so-fancy",                 as:command
 
 # colors & Theme

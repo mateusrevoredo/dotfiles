@@ -1,9 +1,6 @@
-# Local/private config goes in the include
-[include]
-	path = ~/.gitconfig.local
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim 
+	editor = vim
 	pager = diff-so-fancy | less --tabs=4 -RFX
 #[merge]
 #    tool = vscode
@@ -42,6 +39,6 @@
 	rebase = false
 [push]
 	default = current
-[user]
-	name = Mateus Revoredo
-	email = 1175432+mateusrevoredo@users.noreply.github.com
+# Local/private config goes in the include
+[include]
+	path = ~/.gitconfig.local
