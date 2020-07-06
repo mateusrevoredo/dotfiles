@@ -51,6 +51,8 @@
       - zsh
       - neovim
       - tmux
+      - neofetch
+      - bat
 
     asdf_dependencies:
       - gettext
