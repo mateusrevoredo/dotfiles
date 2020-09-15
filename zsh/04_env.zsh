@@ -30,3 +30,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export PKG_CONFIG_PATH="$(brew --prefix icu4c)/lib/pkgconfig:$(brew --prefix krb5)/lib/pkgconfig:$(brew --prefix libedit)/lib/pkgconfig:$(brew --prefix libxml2)/lib/pkgconfig:$(brew --prefix openssl)/lib/pkgconfig"
 fi
+
+# fix ansible issue on new macOS versions
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

@@ -57,6 +57,7 @@
       - curl
       - neofetch
       - bat
+      - gnu-tar
 
     asdf_dependencies:
       - automake
@@ -95,8 +96,8 @@
 
     homebrew_cask_appdir: /Applications
     homebrew_cask_apps:
-      - 1password
-      - 1password-cli
+      - bitwarden
+      - bitwarden-cli
       - aerial
       - alfred
       - appcleaner
@@ -115,6 +116,7 @@
       - insomnia
       - istat-menus
       - iterm2
+      - drawio
       - kap
       - karabiner-elements
       - keyboard-maestro

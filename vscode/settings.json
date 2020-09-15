@@ -15,5 +15,9 @@
   "editor.autoClosingBrackets": "never",
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.fontSize": 14,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[ledger]": {
+  "editor.folding":
+  
+  }
 }
