@@ -1,7 +1,7 @@
 {
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Material Theme",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
@@ -16,8 +16,38 @@
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.fontSize": 14,
   "editor.formatOnSave": true,
-  "[ledger]": {
-  "editor.folding":
-  
-  }
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "auto-close-tag.excludedTags": [
+    "area",
+    "base",
+    "br",
+    "col",
+    "command",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "keygen",
+    "link",
+    "meta",
+    "param",
+    "source",
+    "track",
+    "wbr"
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": ""
+    }
+  ]
 }

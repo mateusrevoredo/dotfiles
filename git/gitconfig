@@ -1,15 +1,28 @@
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim
-	pager = diff-so-fancy | less --tabs=4 -RFX
-#[merge]
-#    tool = vscode
-#[mergetool "vscode"]
-#    cmd = code --wait $MERGED
-#[diff]
-#    tool = vscode
-#[difftool "vscode"]
-#    cmd = code --wait --diff $LOCAL $REMOTE
+	editor = code
+	pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+    features = side-by-side line-numbers monokai
+    syntax-theme = Monokai Extended
+[delta "monokai"]
+    side-by-side = true
+    navigate = true
+    syntax-theme = Monokai Extended
+    minus-style = syntax "#54343e"
+    plus-style = syntax "#444c3c"
+    line-numbers-minus-style = red bold
+    line-numbers-plus-style = green bold
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -34,9 +47,12 @@
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
 	set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
+	dsf = diff --color
+  # Shortcut for a 'normal' diff to save as a patch for emailing or later application
+  patch = !git --no-pager diff --no-color
 [pull]
 	default = current
-	rebase = false
+	rebase = true
 [push]
 	default = current
 # Local/private config goes in the include

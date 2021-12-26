@@ -27,77 +27,81 @@
       - { src: "iterm/com.googlecode.iterm2.plist", dest: "~/Library/Preferences/com.googlecode.iterm2.plist" }
       - { src: "launchd/com.mateusrevoredo.alfred-gdrive.plist", dest: "~/Library/LaunchAgents/com.mateusrevoredo.alfred-gdrive.plist" }
       - { src: "vscode/settings.json", dest: "~/Library/Application Support/Code/User/settings.json" }
+      - { src: "git/lazygit.yml", dest: "~/Library/Application Support/lazygit/config.yml" }
+      - { src: "hyper/hyper.js", dest: "~/.hyper.js" }
 
     launch_agents_load:
       - com.mateusrevoredo.alfred-gdrive
 
     homebrew_installed_packages:
+      - bat
       - coreutils
+      - curl
       - exa
-      - htop
+      - fasd
       - fd
       - findutils
-      - jq
       - fzf
+      - ghq
       - git
+      - git-delta
+      - gnu-tar
+      - goku
+      - htop
       - jq
-      - sqlite
+      - jq
+      - lazygit
       - mas
       - mosh
       - ncdu
+      - neofetch
       - nmap
       - openssh
+      - sqlite
       - telnet
-      - unzip
-      - neovim
-      - wget
-      - goku
-      - zsh
       - tmux
-      - curl
-      - neofetch
-      - bat
-      - gnu-tar
+      - unzip
+      - wget
+      - zsh
 
     asdf_dependencies:
-      - automake
-      - gpg
       - autoconf
-      - openssl
+      - automake
       - bison
-      - libyaml
       - ccache
       - freetype
-      - readline
       - gettext
+      - gpg
       - icu4c
       - krb5
       - libedit
       - libiconv
       - libjpeg
       - libpng
-      - libxml2
-      - libzip
-      - pkg-config
-      - re2c
-      - zlib
-      - postgresql
-      - libxslt
       - libtool
+      - libxml2
+      - libxslt
+      - libyaml
+      - libzip
+      - openssl
+      - pkg-config
+      - postgresql
+      - re2c
+      - readline
       - unixodbc
+      - zlib
 
     homebrew_taps:
-      - homebrew/core
-      - homebrew/cask
-      - yqrashawn/goku
       - dteoh/sqa
-      - homebrew/cask-fonts
+      - homebrew/cask
       - homebrew/cask-drivers
+      - homebrew/cask-fonts
+      - homebrew/core
+      - yqrashawn/goku
 
     homebrew_cask_appdir: /Applications
     homebrew_cask_apps:
-      - bitwarden
-      - bitwarden-cli
+      - 1password
       - aerial
       - alfred
       - appcleaner
@@ -108,29 +112,37 @@
       - controlplane
       - daisydisk
       - docker
+      - drawio
       - firefox
       - font-fira-code
       - font-firacode-nerd-font
       - google-chrome
       - hazel
+      - home-assistant
+      - hyper
+      - iina
       - insomnia
       - istat-menus
       - iterm2
-      - drawio
       - kap
       - karabiner-elements
       - keyboard-maestro
       - keyboardcleantool
+      - kindle
+      - logitech-camera-settings
       - logitech-options
-      - notion
+      - mqtt-explorer
+      - mullvadvpn
       - netspot
-      - slowquitapps
+      - notion
+      - obsidian
       - paw
       - phpstorm
       - postman
-      - slack
       - sequel-pro
       - skype
+      - slack
+      - slowquitapps
       - spotify
       - sublime-text
       - telegram
@@ -140,10 +152,9 @@
       - virtualbox
       - visual-studio-code
       - vlc
-      - wireshark
       - whatsapp
+      - wireshark
       - xmind
-      - iina
 
     mas_installed_apps:
       - { id: 477670270, name: "2Do" }

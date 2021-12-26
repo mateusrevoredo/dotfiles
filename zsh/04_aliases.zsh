@@ -7,4 +7,3 @@ command -v sha1sum > /dev/null || alias sha1sum="shasum"
 # Show/hide hidden files in Finder
 alias updatedb="LC_ALL='C' sudo updatedb"
 alias of="open -a Finder ./"
-alias vim="nvim"

@@ -1,8 +1,16 @@
+unsetopt HIST_BEEP
+# 10 second wait if you do something that will delete everything
+setopt RM_STAR_WAIT
+# correct spelling for commands
+setopt CORRECT
+# do not correct spelling for filenames
+unsetopt CORRECTALL
+
 # locale
 export LC_ALL=en_US.UTF-8
 export LANG="en_US"
 
-export EDITOR="vim"
+export EDITOR="code -w"
 
 # keep a ton of history. You can reset these without editing .zshrc by
 # adding a file to ~/.zshrc.d.
@@ -26,10 +34,6 @@ TIMEFMT="%U user %S system %P cpu %*Es total"
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --no-height --no-reverse"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git --color=always"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  export PKG_CONFIG_PATH="$(brew --prefix icu4c)/lib/pkgconfig:$(brew --prefix krb5)/lib/pkgconfig:$(brew --prefix libedit)/lib/pkgconfig:$(brew --prefix libxml2)/lib/pkgconfig:$(brew --prefix openssl)/lib/pkgconfig"
-fi
 
 # fix ansible issue on new macOS versions
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

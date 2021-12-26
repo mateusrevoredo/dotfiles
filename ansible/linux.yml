@@ -49,7 +49,6 @@
       - unzip
       - wget
       - zsh
-      - neovim
       - tmux
       - neofetch
       - bat

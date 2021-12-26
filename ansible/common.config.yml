@@ -9,24 +9,29 @@ shared_symlinks:
   - { src: "asdf/default-python-packages", dest: "~/.default-python-packages" }
 
 shared_vscode_extensions:
+  - 2gua.rainbow-brackets
   - CoenraadS.bracket-pair-colorizer-2
+  - dongfg.vscode-beancount-formatter
+  - eamodio.gitlens
   - EditorConfig.EditorConfig
-  - Equinusocio.vsc-material-theme
   - formulahendry.auto-close-tag
   - HookyQR.beautify
   - k--kato.intellij-idea-keybindings
   - Lencerf.beancount
+  - lextudio.restructuredtext
   - ms-azuretools.vscode-docker
   - ms-mssql.mssql
   - ms-python.python
   - msjsdiag.debugger-for-chrome
-  - vscode-icons-team.vscode-icons
-  - vscoss.vscode-ansible
-  - streetsidesoftware.code-spell-checker
-  - dongfg.vscode-beancount-formatter
   - oderwat.indent-rainbow
   - redhat.vscode-yaml
-  - lextudio.restructuredtext
+  - redhat.vscode-xml
+  - shardulm94.trailing-spaces
+  - streetsidesoftware.code-spell-checker
+  - tyriar.sort-lines
+  - vscode-icons-team.vscode-icons
+  - vscoss.vscode-ansible
+  - wholroyd.jinja
 
 asdf_home: "{{ ansible_env.HOME }}"
 asdf_dir: "{{ asdf_home }}/.asdf"

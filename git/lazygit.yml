@@ -1,0 +1,11 @@
+gui:
+  mouseEvents: false
+os:
+  openCommand: 'code -rg {{filename}}'
+  editCommand: 'code'
+  editCommandTemplate: '{{editor}} --goto {{filename}}:{{line}}'
+git:
+  paging:
+    colorArg: always
+    useConfig: true
+notARepository: 'skip'
