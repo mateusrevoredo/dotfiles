@@ -59,6 +59,7 @@
       - nmap
       - openssh
       - sqlite
+      - starship
       - telnet
       - tmux
       - unzip

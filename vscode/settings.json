@@ -1,7 +1,6 @@
 {
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "Monokai Pro",
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
@@ -17,7 +16,6 @@
   "terminal.integrated.fontSize": 14,
   "editor.formatOnSave": true,
   "files.trimTrailingWhitespace": true,
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
   "auto-close-tag.excludedTags": [
     "area",
     "base",
@@ -49,5 +47,10 @@
       "user": "{{put-username-here}}",
       "password": ""
     }
-  ]
+  ],
+  "redhat.telemetry.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "terminal.external.osxExec": "iTerm.app",
+  "workbench.iconTheme": "Monokai Pro Icons"
 }
