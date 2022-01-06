@@ -7,3 +7,5 @@ command -v sha1sum > /dev/null || alias sha1sum="shasum"
 alias updatedb="LC_ALL='C' sudo updatedb"
 alias of="open -a Finder ./"
 alias cat='bat --paging=never'
+alias lg='lazygit'
+alias dotfiles='code ~/.dotfiles'

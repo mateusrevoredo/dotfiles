@@ -1,3 +1,6 @@
+# Global dotfiles folder
+export DOTFILES="${HOME}/.dotfiles"
+
 unsetopt HIST_BEEP
 # 10 second wait if you do something that will delete everything
 setopt RM_STAR_WAIT
@@ -37,7 +40,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # fix ansible issue on new macOS versions
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
 
 #FZF Color
 # disable sort when completing `git checkout`

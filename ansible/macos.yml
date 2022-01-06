@@ -104,7 +104,6 @@
     homebrew_cask_appdir: /Applications
     homebrew_cask_apps:
       - 1password
-      - adguard
       - aerial
       - alfred
       - appcleaner
