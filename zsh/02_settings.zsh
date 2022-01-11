@@ -26,8 +26,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 # declare the variable
 typeset -A ZSH_HIGHLIGHT_PATTERNS
 # to have commands starting with `rm -rf` in red:
-ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
-ZSH_HIGHLIGHT_PATTERNS+=('rm \*' 'fg=white,bold,bg=red')
+ZSH_HIGHLIGHT_PATTERNS+=('rm -[f,r] *' 'fg=red,bold,standout')
+ZSH_HIGHLIGHT_PATTERNS+=('rm -[f,r][f,r] *' 'fg=red,bold,standout')
 
 # long running processes should return time after they complete. Specified
 # in seconds.
@@ -40,6 +40,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # fix ansible issue on new macOS versions
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+export NVM_LAZY_LOAD=true
 
 #FZF Color
 # disable sort when completing `git checkout`

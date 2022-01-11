@@ -22,6 +22,7 @@ zplug "plugins/macos",                          from:oh-my-zsh
 zplug "chrissicool/zsh-256color"
 zplug "DarrinTisdale/zsh-aliases-exa"
 zplug "xPMo/zsh-ls-colors"
+zplug "lukechilds/zsh-nvm"
 zplug "wookayin/fzf-fasd",                          defer:1, on:"plugins/fasd"
 zplug "Aloxaf/fzf-tab",                             defer:1, on:"plugins/fzf"
 zplug "zsh-users/zsh-completions",                  defer:0

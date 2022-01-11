@@ -1,20 +1,20 @@
 [core]
-	excludesfile = ~/.gitignore
-	editor = code
-	pager = delta
+  excludesfile = ~/.gitignore
+  editor = code -w
+  pager = delta
 [interactive]
   diffFilter = delta --color-only
 [delta]
-    features = side-by-side line-numbers monokai
-    syntax-theme = Monokai Extended
+  features = side-by-side line-numbers monokai
+  syntax-theme = Monokai Extended
 [delta "monokai"]
-    side-by-side = true
-    navigate = true
-    syntax-theme = Monokai Extended
-    minus-style = syntax "#54343e"
-    plus-style = syntax "#444c3c"
-    line-numbers-minus-style = red bold
-    line-numbers-plus-style = green bold
+  side-by-side = true
+  navigate = true
+  syntax-theme = Monokai Extended
+  minus-style = syntax "#54343e"
+  plus-style = syntax "#444c3c"
+  line-numbers-minus-style = red bold
+  line-numbers-plus-style = green bold
 [merge]
   conflictstyle = diff3
 [diff]
