@@ -35,10 +35,12 @@
 
     homebrew_installed_packages:
       - bat
+      - beancount
       - coreutils
       - curl
       - exa
       - fasd
+      - fava
       - fd
       - findutils
       - fzf
@@ -104,10 +106,11 @@
     homebrew_cask_appdir: /Applications
     homebrew_cask_apps:
       - 1password
-      - aerial
+      - adguard
       - alfred
       - balenaetcher
       - bartender
+      - pdf-expert
       - bettertouchtool
       - coconutbattery
       - contexts
@@ -121,22 +124,22 @@
       - google-chrome
       - hazel
       - home-assistant
-      - hyper
       - iina
       - insomnia
       - istat-menus
       - iterm2
       - kap
       - karabiner-elements
+      - keka
       - keyboard-maestro
       - keyboardcleantool
       - kindle
       - logitech-camera-settings
       - logitech-options
+      - microsoft-office
       - mqtt-explorer
       - mullvadvpn
       - netspot
-      - notion
       - obsidian
       - paw
       - phpstorm
@@ -144,22 +147,14 @@
       - sequel-pro
       - skype
       - slack
-      - slowquitapps
       - spotify
-      - sublime-text
       - telegram
-      - the-unarchiver
-      - timing
       - vagrant
       - virtualbox
       - visual-studio-code
-      - vlc
       - whatsapp
-      - wireshark
-      - xmind
 
     mas_installed_apps:
-      - { id: 477670270, name: "2Do" }
       - { id: 937984704, name: "Amphetamine" }
       - { id: 918207447, name: "Annotate" }
       - { id: 824183456, name: "Affinity Photo" }
@@ -167,7 +162,7 @@
       - { id: 441258766, name: "Magnet" }
       - { id: 409201541, name: "Pages" }
       - { id: 445189367, name: "PopClip" }
-      - { id: 1207352056, name: "Sugarmate Glance" }
+      - { id: 904280696, name: "Things 3" }
       - { id: 747648890, name: "Telegram" }
       - { id: 409203825, name: "Numbers" }
       - { id: 409201541, name: "Pages" }
